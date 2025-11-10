@@ -1,0 +1,309 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Avaliações de produtos — HyperWay">
+  <title>Avaliações — HyperWay</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="logo" onclick="location.href='../index.html'" role="link" aria-label="Ir para a página inicial">
+        <img src="HyperLOGO.png" alt="Logo HyperFit" />
+        <h1>HyperWay</h1>
+      </div>
+      <nav aria-label="Menu principal">
+        <ul>
+          <li><a href="../index.html">Início</a></li>
+          <li><a href="categorias.html">Categorias</a></li>
+          <li><a href="comparar.html">Comparar</a></li>
+          <li><a href="avaliacoes.html">Avaliações</a></li>
+          <li><a href="contato.html">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+
+  <main id="main-content" role="main">
+
+      <section class="avaliacoes-section" aria-labelledby="avaliacoes-title">
+        <div class="container">
+          <header class="avaliacoes-header">
+            <h2 id="avaliacoes-title">Avaliações de Usuários</h2>
+            <div class="avaliacoes-score">
+              <div class="score-number">4.6</div>
+              <div class="score-stars" aria-label="4.6 de 5 estrelas">
+                ★★★★☆
+              </div>
+              <div class="score-meta">
+                <span class="total-reviews">128 avaliações</span>
+                <span class="separator">•</span>
+                <span class="verified">Última: 2 dias</span>
+              </div>
+            </div>
+            <div class="avaliacoes-actions">
+              <button class="btn btn-primary open-review-btn">Escrever avaliação</button>
+              <a href="#avaliacoes-list" class="link-see-all">Ver todas</a>
+            </div>
+          </header>
+
+          <div class="avaliacoes-body">
+            <aside class="avaliacoes-distribution">
+              <div class="dist-row"><span>5★</span><div class="bar"><div class="bar-fill" style="width:72%"></div></div><span>72%</span></div>
+              <div class="dist-row"><span>4★</span><div class="bar"><div class="bar-fill" style="width:14%"></div></div><span>14%</span></div>
+              <div class="dist-row"><span>3★</span><div class="bar"><div class="bar-fill" style="width:7%"></div></div><span>7%</span></div>
+              <div class="dist-row"><span>2★</span><div class="bar"><div class="bar-fill" style="width:4%"></div></div><span>4%</span></div>
+              <div class="dist-row"><span>1★</span><div class="bar"><div class="bar-fill" style="width:3%"></div></div><span>3%</span></div>
+            </aside>
+
+            <div class="avaliacoes-list-wrap">
+              <ul id="avaliacoes-list">
+                <li class="avaliacao-card">
+                  <div class="av-header">
+                    <div class="av-avatar">JR</div>
+                    <div class="av-meta">
+                      <strong>João R.</strong>
+                      <time datetime="2025-09-28">28 set 2025</time>
+                      <div class="av-stars">★★★★☆</div>
+                    </div>
+                  </div>
+                  <div class="av-body">
+                    <h4>Excelente custo-benefício</h4>
+                    <p>Produto com boa solubilidade e sabor agradável. Notei melhora na recuperação. Recomendo!</p>
+                    <ul class="av-proscons">
+                      <li><strong>Prós:</strong> sabor, dissolução</li>
+                      <li><strong>Contras:</strong> embalagem poderia ser melhor</li>
+                    </ul>
+                  </div>
+                  <div class="av-footer">
+                    <button class="btn btn-ghost">Útil (12)</button>
+                    <button class="btn btn-ghost">Compartilhar</button>
+                  </div>
+                </li>
+
+
+              </ul>
+
+              <div class="load-more-wrap">
+                <button class="btn btn-ghost load-more">Carregar mais avaliações</button>
+              </div>
+            </div>
+
+            <form class="avaliacao-form">
+              <h3>Escreva sua avaliação</h3>
+              <div class="form-row">
+                <div class="form-left">
+                  <label>Classificação</label>
+                  <div class="rating-input">
+                    <button type="button" class="r-star" data-value="1">☆</button>
+                    <button type="button" class="r-star" data-value="2">☆</button>
+                    <button type="button" class="r-star" data-value="3">☆</button>
+                    <button type="button" class="r-star" data-value="4">☆</button>
+                    <button type="button" class="r-star" data-value="5">☆</button>
+                  </div>
+
+                  <label for="review-name">Nome</label>
+                  <input id="review-name" type="text" placeholder="Seu nome" required>
+
+                  <label for="review-title">Título</label>
+                  <input id="review-title" type="text" placeholder="Resumo curto" required>
+                </div>
+
+                <div class="form-right">
+                  <label for="review-text">Avaliação</label>
+                  <textarea id="review-text" rows="6" placeholder="Conte sua experiência..." required></textarea>
+
+                  <label for="review-pros">Prós</label>
+                  <input id="review-pros" type="text" placeholder="Ex.: sabor, dissolução">
+
+                  <label for="review-cons">Contras</label>
+                  <input id="review-cons" type="text" placeholder="Ex.: preço, embalagem">
+
+                  <div class="form-actions">
+                    <button class="btn btn-primary" type="submit">Enviar avaliação</button>
+                    <button class="btn btn-ghost" type="button">Cancelar</button>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-column">
+        <h3>HyperFit</h3>
+        <ul>
+          <li><a href="#">Sobre nós</a></li>
+          <li><a href="#">Contato</a></li>
+          <li><a href="#">Privacidade</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h3>Suporte</h3>
+        <ul>
+          <li><a href="#">Ajuda</a></li>
+          <li><a href="#">FAQ</a></li>
+          <li><a href="#">Termos</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h3>Siga-nos</h3>
+        <ul>
+          <li><a href="#">Facebook</a></li>
+          <li><a href="#">Instagram</a></li>
+          <li><a href="#">Twitter</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+
+  <script>
+  (function(){
+    const section = document.querySelector('.avaliacoes-section');
+    if(!section) return;
+
+    const openBtns = section.querySelectorAll('.open-review-btn');
+    const modal = document.querySelector('.av-modal');
+    const modalPanel = modal?.querySelector('.av-modal-panel');
+    const modalForm = document.getElementById('av-modal-form');
+    const modalClose = document.querySelector('.av-modal-close');
+    const modalCancel = document.querySelector('.av-modal-cancel');
+    const stars = modal?.querySelectorAll('.rating-input .r-star') || [];
+    const list = document.getElementById('avaliacoes-list');
+    const loadMoreBtn = section.querySelector('.load-more');
+
+
+    openBtns.forEach(b => b.addEventListener('click', () => {
+      if(!modal) return;
+      modal.setAttribute('aria-hidden','false');
+      modalForm?.reset();
+      stars.forEach(s => s.classList.remove('active'));
+      setTimeout(()=> modal.querySelector('#av-name')?.focus(), 120);
+    }));
+
+
+    const closeModal = () => { if(!modal) return; modal.setAttribute('aria-hidden','true'); };
+    modalClose?.addEventListener('click', closeModal);
+    modalCancel?.addEventListener('click', closeModal);
+    modal?.addEventListener('click', (e) => { if(e.target === modal) closeModal(); });
+
+    let modalRating = 0;
+    stars.forEach(s => {
+      s.addEventListener('click', () => {
+        modalRating = Number(s.dataset.value);
+        stars.forEach(x => x.classList.toggle('active', Number(x.dataset.value) <= modalRating));
+      });
+    });
+
+
+    modalForm?.addEventListener('submit', (e) => {
+      e.preventDefault();
+      const name = modalForm.querySelector('[name=name]').value.trim() || 'Anônimo';
+      const title = modalForm.querySelector('[name=title]').value.trim() || 'Sem título';
+      const text = modalForm.querySelector('[name=text]').value.trim() || '';
+      const pros = modalForm.querySelector('[name=pros]').value.trim();
+      const cons = modalForm.querySelector('[name=cons]').value.trim();
+      const rating = modalRating || 5;
+      const id = 'r' + Date.now();
+
+      const li = document.createElement('li');
+      li.className = 'avaliacao-card';
+      li.dataset.id = id;
+      li.innerHTML = `
+        <div class="av-header">
+          <div class="av-avatar">${name.split(' ').map(s=>s[0]||'').slice(0,2).join('').toUpperCase()}</div>
+          <div class="av-meta">
+            <strong class="av-name">${escapeHtml(name)}</strong>
+            <time class="av-date" datetime="${new Date().toISOString().slice(0,10)}">agora</time>
+            <div class="av-stars">${renderStars(rating)}</div>
+          </div>
+        </div>
+        <div class="av-body">
+          <h4 class="av-title">${escapeHtml(title)}</h4>
+          <p class="av-text collapsed">${escapeHtml(text)}</p>
+          <button class="btn btn-ghost ver-mais" type="button">ver mais</button>
+          <ul class="av-proscons">
+            ${pros ? `<li><strong>Prós:</strong> ${escapeHtml(pros)}</li>` : ''}
+            ${cons ? `<li><strong>Contras:</strong> ${escapeHtml(cons)}</li>` : ''}
+          </ul>
+        </div>
+        <div class="av-footer">
+          <button class="btn btn-ghost useful-btn" aria-pressed="false">Útil (0)</button>
+          <button class="btn btn-ghost share-btn">Compartilhar</button>
+        </div>
+      `;
+      list.prepend(li);
+      attachCardEvents(li);
+      modalForm.reset();
+      stars.forEach(s => s.classList.remove('active'));
+      modalRating = 0;
+      closeModal();
+    });
+
+
+    loadMoreBtn?.addEventListener('click', () => {
+      loadMoreBtn.textContent = 'Carregando...';
+      loadMoreBtn.disabled = true;
+      setTimeout(()=> { loadMoreBtn.textContent = 'Sem mais avaliações'; }, 700);
+    });
+
+
+    function renderStars(n){
+      let out = '';
+      for(let i=1;i<=5;i++){
+        if(i<=n) out += '<span class="star full"></span>';
+        else out += '<span class="star empty"></span>';
+      }
+      return out;
+    }
+    function escapeHtml(str){ return str.replace(/[&<>"']/g, m => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":"&#39;"}[m])); }
+
+    function attachCardEvents(root){
+      const vm = root.querySelector('.ver-mais');
+      const txt = root.querySelector('.av-text');
+      if(vm && txt){
+        vm.addEventListener('click', () => {
+          const isCollapsed = txt.classList.toggle('collapsed');
+          vm.textContent = isCollapsed ? 'ver mais' : 'ver menos';
+        });
+      }
+      const useful = root.querySelector('.useful-btn');
+      if(useful){
+        useful.addEventListener('click', () => {
+          const pressed = useful.getAttribute('aria-pressed') === 'true';
+          useful.setAttribute('aria-pressed', String(!pressed));
+          const m = useful.textContent.match(/(\d+)/);
+          let count = m ? Number(m[1]) : 0;
+          count = pressed ? Math.max(0, count-1) : count+1;
+          useful.textContent = `Útil (${count})`;
+        });
+      }
+      const share = root.querySelector('.share-btn');
+      if(share){
+        share.addEventListener('click', async () => {
+          const url = location.href;
+          if(navigator.share){
+            try{ await navigator.share({title: document.title, url}); }
+            catch(e){}
+          } else {
+            try{ await navigator.clipboard.writeText(url); alert('Link copiado.'); }
+            catch(e){ alert('Não foi possível copiar.'); }
+          }
+        });
+      }
+    }
+
+    section.querySelectorAll('.avaliacao-card').forEach(card => attachCardEvents(card));
+  })();
+  </script>
+
+</body>
+</html>
