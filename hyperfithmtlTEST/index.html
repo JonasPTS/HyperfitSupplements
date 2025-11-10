@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>HyperWay</title>
+
+  <link rel="stylesheet" href="optionsheader/style.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="logo" onclick="location.href='#banner'">
+        <img src="optionsheader/HyperLOGO.png" alt="Logo HyperFit" />
+        <h1>HyperWay</h1>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Início</a></li>
+          <li><a href="optionsheader/categorias.html">Categorias</a></li>
+          <li><a href="optionsheader/comparar.html">Comparar</a></li>
+          <li><a href="optionsheader/avaliacoes.html">Avaliações</a></li>
+          <li><a href="optionsheader/contato.html">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section id="banner">
+    <div class="container">
+      <h2>Compare os Melhores Suplementos do Brasil</h2>
+      <p>Encontre produtos por qualidade, preço e avaliação em um só lugar.</p>
+      <button class="btn-banner" onclick="location.href='optionsheader/comparar.html'">Comece Agora</button>
+    </div>
+  </section>
+
+  <section id="search">
+    <div class="container">
+      <input type="text" placeholder="Buscar suplemento ou categoria..." />
+      <button>Buscar</button>
+    </div>
+  </section>
+
+  <section id="categories">
+    <div class="container">
+      <button class="cat-btn">Proteínas</button>
+      <button class="cat-btn">Creatinas</button>
+      <button class="cat-btn">Pré-Treinos</button>
+      <button class="cat-btn">Vitaminas</button>
+    </div>
+  </section>
+  
+  <section id="products">
+    <div class="container">
+
+      <div class="product-card">
+        <img src="imagens/wheySUPP.png" alt="Whey Protein" />
+        <h3>Whey Protein 3W Advanced</h3>
+        <p class="type">Proteína</p>
+        <div class="prices">
+          <div><span>Growth</span><span>R$ 119,90</span></div>
+          <div><span>Integralmedica</span><span>R$ 115,00</span></div>
+          <div><span>Atlhetica</span><span>R$ 129,90</span></div>
+        </div>
+        <button onclick="window.location.href='optionsheader/comparar.html'" 
+        class="btn-compare">Comparar</button>
+      </div>
+
+      <div class="product-card">
+        <img src="imagens/PretreiSUPP.png" alt="Creatina Monohidratada" />
+        <h3>Creatina Monohidratada 300g</h3>
+        <p class="type">Creatina</p>
+        <div class="prices">
+          <div><span>Growth</span><span>R$ 49,90</span></div>
+          <div><span>Universal</span><span>R$ 45,00</span></div>
+          <div><span>Max Titanium</span><span>R$ 52,90</span></div>
+        </div>
+        <button onclick="window.location.href='optionsheader/comparar.html'" 
+        class="btn-compare">Comparar</button>
+      </div>
+
+      <div class="product-card">
+        <img src="imagens/wheySUPP.png" alt="Pré-Treino Xtreme Energy" />
+        <h3>Pré-Treino Xtreme Energy</h3>
+        <p class="type">Pré-Treino</p>
+        <div class="prices">
+          <div><span>Growth</span><span>R$ 89,90</span></div>
+          <div><span>Dux Nutrition</span><span>R$ 95,00</span></div>
+          <div><span>VPLab</span><span>R$ 99,90</span></div>
+        </div>
+        <button onclick="window.location.href='optionsheader/comparar.html'" 
+        class="btn-compare">Comparar</button>
+      </div>
+
+      <div class="product-card">
+        <img src="imagens/PretreiSUPP.png" alt="Vitaminas C Complex" />
+        <h3>Vitaminas C Complex - 60 cápsulas</h3>
+        <p class="type">Vitaminas</p>
+        <div class="prices">
+          <div><span>Growth</span><span>R$ 29,90</span></div>
+          <div><span>Sundown</span><span>R$ 27,50</span></div>
+          <div><span>Centrum</span><span>R$ 30,00</span></div>
+        </div>
+        <button onclick="window.location.href='optionsheader/comparar.html'" 
+        class="btn-compare">Comparar</button>
+      </div>
+    </div>
+  </section>
+
+  <section id="how-it-works">
+    <div class="container">
+      <h2>Como Funciona</h2>
+      <div class="steps">
+        <div class="step">
+          <h3>1. Pesquise</h3>
+          <p>Busque pelo suplemento desejado ou filtre por categoria.</p>
+        </div>
+        <div class="step">
+          <h3>2. Compare</h3>
+          <p>Veja preços em diferentes lojas e avaliações de usuários.</p>
+        </div>
+        <div class="step">
+          <h3>3. Economize</h3>
+          <p>Escolha o melhor custo-benefício e adquira o produto ideal.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="testimonials">
+    <div class="container">
+      <h2>Avaliações de Usuários</h2>
+      <div class="testimonial">
+        <p>"O HyperFit me ajudou a encontrar o melhor preço para meu whey favorito. Muito útil!"</p>
+        <cite>- João S.</cite>
+      </div>
+      <div class="testimonial">
+        <p>"Comparar suplementos ficou muito fácil. Recomendo para todo mundo que malha."</p>
+        <cite>- Maria F.</cite>
+      </div>
+      <div class="testimonial">
+        <p>"Ferramenta incrível! Economizei dinheiro escolhendo a opção com melhor avaliação."</p>
+        <cite>- Lucas R.</cite>
+      </div>
+    </div>
+  </section>
+
+  <footer id="footer">
+    <div class="container">
+      <div class="footer-column">
+        <h3>HyperFit</h3>
+        <ul>
+          <li><a href="optionsheader/sobrenos.html">Sobre nós</a></li>
+          <li><a href="optionsheader/contato.html">Contato</a></li>
+          <li><a href="optionsheader/privacidade.html">Privacidade</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h3>Suporte</h3>
+        <ul>
+          <li><a href="">Ajuda</a></li>
+          <li><a href="optionsheader/faq.html">FAQ</a></li>
+          <li><a href="optionsheader/termos.html">Termos</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h3>Siga-nos</h3>
+        <ul>
+          <li><a href="https://www.facebook.com/">Facebook</a></li>
+          <li><a href="https://www.instagram.com/">Instagram</a></li>
+          <li><a href="https://x.com/">Twitter</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

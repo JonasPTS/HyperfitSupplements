@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Catálogo de proteínas — compare por composição, sabor e avaliação.">
+  <title>Proteínas — HyperWay</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <div class="container">
+      <div class="logo" onclick="location.href='../index.html'">
+        <img src="HyperLOGO.png" alt="Logo HyperFit" />
+        <h1>HyperWay</h1>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="../index.html">Início</a></li>
+          <li><a href="categorias.html">Categorias</a></li>
+          <li><a href="comparar.html">Comparar</a></li>
+          <li><a href="avaliacoes.html">Avaliações</a></li>
+          <li><a href="contato.html">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content" class="produtos-page" role="main">
+    <div class="container">
+      <nav class="breadcrumb" aria-label="Você está em">
+        <a href="../index.html">Início</a> » <a href="categorias.html">Categorias</a> » <span aria-current="page">Proteínas</span>
+      </nav>
+
+      <header class="page-header" aria-labelledby="titulo-produtos">
+        <h2 id="titulo-produtos">Proteínas</h2>
+        <p class="subtitle">
+          Selecione e compare proteínas por composição, sabor e qualidade — filtros práticos para encontrar o melhor custo-benefício para o seu treino.
+        </p>
+      </header>
+
+      <section class="controls" aria-label="Controles de busca e filtro">
+        <div class="search-wrap">
+          <input type="search" placeholder="Buscar por nome, marca ou sabor..." aria-label="Buscar suplementos">
+        </div>
+
+        <div class="filters-wrap" aria-label="Filtros por categoria">
+          <label class="small" aria-hidden="true">Categoria:</label>
+          <div class="chips" role="list">
+            <button class="chip active" type="button" role="listitem">Whey</button>
+            <button class="chip" type="button" role="listitem">Isolado</button>
+            <button class="chip" type="button" role="listitem">Concentrado</button>
+            <button class="chip" type="button" role="listitem">Vegano</button>
+          </div>
+        </div>
+
+        <div class="sort-wrap" aria-label="Ordenação">
+          <label class="small" for="sort-select">Ordenar:</label>
+          <select id="sort-select" aria-label="Ordenar produtos">
+            <option>Mais relevantes</option>
+            <option>Maior proteína / dose</option>
+            <option>Menor preço</option>
+            <option>Melhor avaliação</option>
+          </select>
+        </div>
+      </section>
+
+      <section class="grid-produtos" aria-label="Lista de produtos">
+        <article class="produto-card" aria-labelledby="p1-title">
+          <div class="card-media">
+            <img src="../imagens/PretreiSUPP.png" alt="Whey Protein 3W Advanced 900g">
+            <div class="badge">24g proteína</div>
+            <div class="compare-checkbox" title="Selecionar para comparar">
+              <input type="checkbox" aria-label="Comparar Whey Protein 3W Advanced">
+            </div>
+          </div>
+
+          <div class="card-body">
+            <h3 id="p1-title" class="produto-title">Whey Protein 3W Advanced — 900g</h3>
+            <p class="produto-sub">Marca Alpha • Sabor Chocolate</p>
+
+            <ul class="composition" aria-label="Composição nutricional">
+              <li><strong>Proteína:</strong> 24 g / dose</li>
+              <li><strong>Carboidratos:</strong> 3 g / dose</li>
+              <li><strong>Gorduras:</strong> 2 g / dose</li>
+              <li><strong>Calorias:</strong> 120 kcal</li>
+            </ul>
+
+            <div class="card-footer">
+              <div class="price">R$ 129,90</div>
+              <div class="actions">
+                <a class="btn ghost" href="comparar.html" role="button" aria-label="Comparar Whey 3W">Comparar</a>
+                <a class="btn primary" href="#" role="button" aria-label="Ver Whey 3W">Ver</a>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="produto-card" aria-labelledby="p2-title">
+          <div class="card-media">
+            <img src="../imagens/wheySUPP.png" alt="Whey Protein Isolado 1kg">
+            <div class="badge">25g proteína</div>
+            <div class="compare-checkbox" title="Selecionar para comparar">
+              <input type="checkbox" aria-label="Comparar Whey Isolado 1kg">
+            </div>
+          </div>
+
+          <div class="card-body">
+            <h3 id="p2-title" class="produto-title">Whey Protein Isolado — 1kg</h3>
+            <p class="produto-sub">Marca Beta • Sabor Baunilha</p>
+
+            <ul class="composition" aria-label="Composição nutricional">
+              <li><strong>Proteína:</strong> 25 g / dose</li>
+              <li><strong>Carboidratos:</strong> 1 g / dose</li>
+              <li><strong>Gorduras:</strong> 0.5 g / dose</li>
+              <li><strong>Calorias:</strong> 110 kcal</li>
+            </ul>
+
+            <div class="card-footer">
+              <div class="price">R$ 149,90</div>
+              <div class="actions">
+                <a class="btn ghost" href="comparar.html" role="button" aria-label="Comparar Whey Isolado">Comparar</a>
+                <a class="btn primary" href="#" role="button" aria-label="Ver Whey Isolado">Ver</a>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="produto-card" aria-labelledby="p3-title">
+          <div class="card-media">
+            <img src="../imagens/wheySUPP.png" alt="Proteína Vegana Blend 800g">
+            <div class="badge">20g proteína</div>
+            <div class="compare-checkbox" title="Selecionar para comparar">
+              <input type="checkbox" aria-label="Comparar Proteína Vegana Blend">
+            </div>
+          </div>
+
+          <div class="card-body">
+            <h3 id="p3-title" class="produto-title">Proteína Vegana Blend — 800g</h3>
+            <p class="produto-sub">Marca Verde • Sabor Baunilha</p>
+
+            <ul class="composition" aria-label="Composição nutricional">
+              <li><strong>Proteína:</strong> 20 g / dose</li>
+              <li><strong>Carboidratos:</strong> 4 g / dose</li>
+              <li><strong>Gorduras:</strong> 3 g / dose</li>
+              <li><strong>Calorias:</strong> 130 kcal</li>
+            </ul>
+
+            <div class="card-footer">
+              <div class="price">R$ 139,90</div>
+              <div class="actions">
+                <a class="btn ghost" href="comparar.html" role="button" aria-label="Comparar Proteína Vegana">Comparar</a>
+                <a class="btn primary" href="#" role="button" aria-label="Ver Proteína Vegana">Ver</a>
+              </div>
+            </div>
+          </div>
+        </article>
+
+      </section>
+
+      <nav class="pagination" aria-label="Paginação de produtos">
+        <button class="page-btn" type="button" aria-label="Página anterior">« Anterior</button>
+        <button class="page-btn active" type="button" aria-current="page">1</button>
+        <button class="page-btn" type="button">2</button>
+        <button class="page-btn" type="button">3</button>
+        <button class="page-btn" type="button" aria-label="Próxima página">Próxima »</button>
+      </nav>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-column">
+        <h3>HyperFit</h3>
+        <ul>
+          <li><a href="#">Sobre nós</a></li>
+          <li><a href="#">Contato</a></li>
+          <li><a href="#">Privacidade</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h3>Suporte</h3>
+        <ul>
+          <li><a href="#">Ajuda</a></li>
+          <li><a href="#">FAQ</a></li>
+          <li><a href="#">Termos</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h3>Siga-nos</h3>
+        <ul>
+          <li><a href="#">Facebook</a></li>
+          <li><a href="#">Instagram</a></li>
+          <li><a href="#">Twitter</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
