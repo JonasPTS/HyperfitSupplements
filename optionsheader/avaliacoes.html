@@ -10,11 +10,18 @@
 <body>
   <header>
     <div class="container">
-      <div class="logo" onclick="location.href='../index.html'" role="link" aria-label="Ir para a página inicial">
+      <div class="logo" onclick="location.href='../index.html'">
         <img src="HyperLOGO.png" alt="Logo HyperFit" />
         <h1>HyperWay</h1>
       </div>
-      <nav aria-label="Menu principal">
+
+      <div class="hamburger" onclick="this.classList.toggle('active'); document.querySelector('nav ul').classList.toggle('mobile-open')">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <nav>
         <ul>
           <li><a href="../index.html">Início</a></li>
           <li><a href="categorias.html">Categorias</a></li>
@@ -140,25 +147,23 @@
       <div class="footer-column">
         <h3>HyperFit</h3>
         <ul>
-          <li><a href="#">Sobre nós</a></li>
-          <li><a href="#">Contato</a></li>
-          <li><a href="#">Privacidade</a></li>
+          <li><a href="sobrenos.html">Sobre nós</a></li>
+          <li><a href="contato.html">Contato</a></li>
+          <li><a href="privacidade.html">Privacidade</a></li>
         </ul>
       </div>
       <div class="footer-column">
         <h3>Suporte</h3>
         <ul>
-          <li><a href="#">Ajuda</a></li>
-          <li><a href="#">FAQ</a></li>
-          <li><a href="#">Termos</a></li>
+          <li><a href="contato.html">Ajuda</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="termos.html">Termos</a></li>
         </ul>
       </div>
       <div class="footer-column">
         <h3>Siga-nos</h3>
         <ul>
-          <li><a href="#">Facebook</a></li>
-          <li><a href="#">Instagram</a></li>
-          <li><a href="#">Twitter</a></li>
+          <li><a href="https://www.instagram.com/hyperfit.supplements/" target="_blank">Instagram</a></li>
         </ul>
       </div>
     </div>

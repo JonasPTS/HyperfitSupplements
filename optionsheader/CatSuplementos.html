@@ -1,0 +1,219 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Catálogo de suplementos — compare pré-treinos, creatina, aminoácidos e mais.">
+  <title>Suplementos — HyperWay</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <div class="container">
+      <div class="logo" onclick="location.href='../index.html'">
+        <img src="HyperLOGO.png" alt="Logo HyperFit" />
+        <h1>HyperWay</h1>
+      </div>
+
+      <div class="hamburger"
+        onclick="this.classList.toggle('active'); document.querySelector('nav ul').classList.toggle('mobile-open')">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <nav>
+        <ul>
+          <li><a href="../index.html">Início</a></li>
+          <li><a href="categorias.html">Categorias</a></li>
+          <li><a href="comparar.html">Comparar</a></li>
+          <li><a href="avaliacoes.html">Avaliações</a></li>
+          <li><a href="contato.html">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content" class="produtos-page" role="main">
+    <div class="container">
+
+      <!-- Breadcrumb -->
+      <nav class="breadcrumb" aria-label="Você está em">
+        <a href="../index.html">Início</a> » 
+        <a href="categorias.html">Categorias</a> » 
+        <span aria-current="page">Suplementos</span>
+      </nav>
+
+      <!-- Título e descrição -->
+      <header class="page-header" aria-labelledby="titulo-produtos">
+        <h2 id="titulo-produtos">Suplementos</h2>
+        <p class="subtitle">
+          Explore pré-treinos, creatinas, BCAAs e outros suplementos essenciais para melhorar força, foco e recuperação.
+        </p>
+      </header>
+
+      <!-- Controles -->
+      <section class="controls" aria-label="Controles de busca e filtro">
+        <div class="search-wrap">
+          <input type="search" placeholder="Buscar por nome, marca ou categoria..." aria-label="Buscar suplementos">
+        </div>
+
+        <div class="filters-wrap" aria-label="Filtros por categoria">
+          <label class="small" aria-hidden="true">Categoria:</label>
+          <div class="chips" role="list">
+            <button class="chip active" type="button">Pré-treino</button>
+            <button class="chip" type="button">Creatina</button>
+            <button class="chip" type="button">BCAA</button>
+            <button class="chip" type="button">Potência</button>
+          </div>
+        </div>
+
+        <div class="sort-wrap" aria-label="Ordenação">
+          <label class="small" for="sort-select">Ordenar:</label>
+          <select id="sort-select" aria-label="Ordenar produtos">
+            <option>Mais relevantes</option>
+            <option>Menor preço</option>
+            <option>Melhor avaliação</option>
+          </select>
+        </div>
+      </section>
+
+      <!-- Produtos -->
+      <section class="grid-produtos" aria-label="Lista de produtos">
+
+        <!-- PRODUTO 1 -->
+        <article class="produto-card" aria-labelledby="s1-title">
+          <div class="card-media">
+            <img src="../imagens/PretreiSUPP.png" alt="Pré-Treino Explosive 300g">
+            <div class="badge">300g</div>
+            <div class="compare-checkbox">
+              <input type="checkbox" aria-label="Comparar Pré-Treino Explosive">
+            </div>
+          </div>
+
+          <div class="card-body">
+            <h3 id="s1-title" class="produto-title">Pré-Treino Explosive — 300g</h3>
+            <p class="produto-sub">Marca Alpha • Sabor Fruit Punch</p>
+
+            <ul class="composition">
+              <li><strong>Beta Alanina:</strong> 2.5 g</li>
+              <li><strong>Creatina:</strong> 1.5 g</li>
+              <li><strong>Cafeína:</strong> 300 mg</li>
+            </ul>
+
+            <div class="card-footer">
+              <div class="price">R$ 89,90</div>
+              <div class="actions">
+                <a class="btn ghost" href="comparar.html">Comparar</a>
+                <a class="btn primary" href="#">Ver</a>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- PRODUTO 2 -->
+        <article class="produto-card" aria-labelledby="s2-title">
+          <div class="card-media">
+            <img src="../imagens/CreatinaSUPP.png" alt="Creatina Monohidratada 300g">
+            <div class="badge">100 doses</div>
+            <div class="compare-checkbox">
+              <input type="checkbox" aria-label="Comparar Creatina 300g">
+            </div>
+          </div>
+
+          <div class="card-body">
+            <h3 id="s2-title" class="produto-title">Creatina Monohidratada — 300g</h3>
+            <p class="produto-sub">Marca ProForce • Sem sabor</p>
+
+            <ul class="composition">
+              <li><strong>Creatina pura:</strong> 3 g / dose</li>
+              <li><strong>Carboidratos:</strong> 0 g</li>
+            </ul>
+
+            <div class="card-footer">
+              <div class="price">R$ 69,90</div>
+              <div class="actions">
+                <a class="btn ghost" href="comparar.html">Comparar</a>
+                <a class="btn primary" href="#">Ver</a>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- PRODUTO 3 -->
+        <article class="produto-card" aria-labelledby="s3-title">
+          <div class="card-media">
+            <img src="../imagens/BCAASUPP.png" alt="BCAA Recovery 120 cápsulas">
+            <div class="badge">120 caps</div>
+            <div class="compare-checkbox">
+              <input type="checkbox" aria-label="Comparar BCAA Recovery">
+            </div>
+          </div>
+
+          <div class="card-body">
+            <h3 id="s3-title" class="produto-title">BCAA Recovery — 120 cápsulas</h3>
+            <p class="produto-sub">Marca NutriPlus • 2:1:1</p>
+
+            <ul class="composition">
+              <li><strong>Leucina:</strong> 1000 mg</li>
+              <li><strong>Isoleucina:</strong> 500 mg</li>
+              <li><strong>Valina:</strong> 500 mg</li>
+            </ul>
+
+            <div class="card-footer">
+              <div class="price">R$ 59,90</div>
+              <div class="actions">
+                <a class="btn ghost" href="comparar.html">Comparar</a>
+                <a class="btn primary" href="#">Ver</a>
+              </div>
+            </div>
+          </div>
+        </article>
+
+      </section>
+
+      <!-- Paginação -->
+      <nav class="pagination">
+        <button class="page-btn">« Anterior</button>
+        <button class="page-btn active">1</button>
+        <button class="page-btn">2</button>
+        <button class="page-btn">3</button>
+        <button class="page-btn">Próxima »</button>
+      </nav>
+
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-column">
+        <h3>HyperFit</h3>
+        <ul>
+          <li><a href="#">Sobre nós</a></li>
+          <li><a href="#">Contato</a></li>
+          <li><a href="#">Privacidade</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <h3>Suporte</h3>
+        <ul>
+          <li><a href="#">Ajuda</a></li>
+          <li><a href="#">FAQ</a></li>
+          <li><a href="#">Termos</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <h3>Siga-nos</h3>
+        <ul>
+          <li><a href="https://www.instagram.com/hyperfit.supplements/" target="_blank">Instagram</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

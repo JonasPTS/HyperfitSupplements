@@ -1,0 +1,218 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Suplementos de performance — pré-treinos, energia, foco e força.">
+  <title>Performance — HyperWay</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <div class="container">
+      <div class="logo" onclick="location.href='../index.html'">
+        <img src="HyperLOGO.png" alt="Logo HyperFit" />
+        <h1>HyperWay</h1>
+      </div>
+
+      <div class="hamburger"
+        onclick="this.classList.toggle('active'); document.querySelector('nav ul').classList.toggle('mobile-open')">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <nav>
+        <ul>
+          <li><a href="../index.html">Início</a></li>
+          <li><a href="categorias.html">Categorias</a></li>
+          <li><a href="comparar.html">Comparar</a></li>
+          <li><a href="avaliacoes.html">Avaliações</a></li>
+          <li><a href="contato.html">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content" class="produtos-page" role="main">
+    <div class="container">
+
+      <!-- Breadcrumb -->
+      <nav class="breadcrumb" aria-label="Você está em">
+        <a href="../index.html">Início</a> » 
+        <a href="categorias.html">Categorias</a> » 
+        <span aria-current="page">Performance</span>
+      </nav>
+
+      <!-- Título -->
+      <header class="page-header" aria-labelledby="titulo-produtos">
+        <h2 id="titulo-produtos">Performance</h2>
+        <p class="subtitle">
+          Pré-treinos, estimulantes e energéticos para máximo foco, força e explosão muscular.
+        </p>
+      </header>
+
+      <!-- Controles -->
+      <section class="controls">
+        <div class="search-wrap">
+          <input type="search" placeholder="Buscar por nome ou marca..." aria-label="Buscar performance">
+        </div>
+
+        <div class="filters-wrap">
+          <label class="small">Tipo:</label>
+          <div class="chips">
+            <button class="chip active">Pré-Treino</button>
+            <button class="chip">Cafeína</button>
+            <button class="chip">Pump</button>
+            <button class="chip">Energia</button>
+          </div>
+        </div>
+
+        <div class="sort-wrap">
+          <label class="small" for="sort-select">Ordenar:</label>
+          <select id="sort-select">
+            <option>Mais relevantes</option>
+            <option>Menor preço</option>
+            <option>Melhor avaliação</option>
+          </select>
+        </div>
+      </section>
+
+      <!-- Produtos -->
+      <section class="grid-produtos">
+
+        <!-- PRODUTO 1 -->
+        <article class="produto-card">
+          <div class="card-media">
+            <img src="../imagens/pretreino1.png" alt="Pré-treino ThunderExtreme">
+            <div class="badge">Ultra Forte</div>
+            <div class="compare-checkbox">
+              <input type="checkbox" aria-label="Comparar ThunderExtreme">
+            </div>
+          </div>
+
+          <div class="card-body">
+            <h3 class="produto-title">ThunderExtreme Pré-Treino</h3>
+            <p class="produto-sub">Marca PowerLabs • 300g</p>
+
+            <ul class="composition">
+              <li><strong>Beta-alanina:</strong> 2.5g</li>
+              <li><strong>Creatina:</strong> 1.5g</li>
+              <li><strong>Cafeína:</strong> 300mg</li>
+            </ul>
+
+            <div class="card-footer">
+              <div class="price">R$ 119,90</div>
+              <div class="actions">
+                <a class="btn ghost" href="comparar.html">Comparar</a>
+                <a class="btn primary" href="#">Ver</a>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- PRODUTO 2 -->
+        <article class="produto-card">
+          <div class="card-media">
+            <img src="../imagens/cafeina.png" alt="Cafeína Turbo 420mg">
+            <div class="badge">420 mg</div>
+            <div class="compare-checkbox">
+              <input type="checkbox" aria-label="Comparar Cafeína Turbo">
+            </div>
+          </div>
+
+          <div class="card-body">
+            <h3 class="produto-title">Cafeína Turbo 420mg</h3>
+            <p class="produto-sub">Marca NitroMax • 60 cáps</p>
+
+            <ul class="composition">
+              <li><strong>Cafeína:</strong> 420mg</li>
+              <li><strong>Outros ingredientes:</strong> gelatina, dióxido de silício</li>
+            </ul>
+
+            <div class="card-footer">
+              <div class="price">R$ 39,90</div>
+              <div class="actions">
+                <a class="btn ghost" href="comparar.html">Comparar</a>
+                <a class="btn primary" href="#">Ver</a>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- PRODUTO 3 -->
+        <article class="produto-card">
+          <div class="card-media">
+            <img src="../imagens/pump.png" alt="NO Pump Vasodilatador">
+            <div class="badge">Pump</div>
+            <div class="compare-checkbox">
+              <input type="checkbox" aria-label="Comparar NO Pump">
+            </div>
+          </div>
+
+          <div class="card-body">
+            <h3 class="produto-title">NO Pump Vasodilatador</h3>
+            <p class="produto-sub">Marca IronFlux • 150g</p>
+
+            <ul class="composition">
+              <li><strong>Arginina:</strong> 3g</li>
+              <li><strong>Citrulina:</strong> 2g</li>
+            </ul>
+
+            <div class="card-footer">
+              <div class="price">R$ 89,90</div>
+              <div class="actions">
+                <a class="btn ghost" href="comparar.html">Comparar</a>
+                <a class="btn primary" href="#">Ver</a>
+              </div>
+            </div>
+          </div>
+        </article>
+
+      </section>
+
+      <!-- Paginação -->
+      <nav class="pagination" aria-label="Paginação">
+        <button class="page-btn">« Anterior</button>
+        <button class="page-btn active">1</button>
+        <button class="page-btn">2</button>
+        <button class="page-btn">3</button>
+        <button class="page-btn">Próxima »</button>
+      </nav>
+
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-column">
+        <h3>HyperFit</h3>
+        <ul>
+          <li><a href="#">Sobre nós</a></li>
+          <li><a href="#">Contato</a></li>
+          <li><a href="#">Privacidade</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <h3>Suporte</h3>
+        <ul>
+          <li><a href="#">Ajuda</a></li>
+          <li><a href="#">FAQ</a></li>
+          <li><a href="#">Termos</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <h3>Siga-nos</h3>
+        <ul>
+          <li><a href="https://www.instagram.com/hyperfit.supplements/" target="_blank">Instagram</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

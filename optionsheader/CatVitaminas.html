@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Catálogo de vitaminas — compare por composição, marca e avaliação.">
+  <title>Vitaminas — HyperWay</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <div class="container">
+      <div class="logo" onclick="location.href='../index.html'">
+        <img src="HyperLOGO.png" alt="Logo HyperFit" />
+        <h1>HyperWay</h1>
+      </div>
+
+      <div class="hamburger"
+        onclick="this.classList.toggle('active'); document.querySelector('nav ul').classList.toggle('mobile-open')">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <nav>
+        <ul>
+          <li><a href="../index.html">Início</a></li>
+          <li><a href="categorias.html">Categorias</a></li>
+          <li><a href="comparar.html">Comparar</a></li>
+          <li><a href="avaliacoes.html">Avaliações</a></li>
+          <li><a href="contato.html">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content" class="produtos-page" role="main">
+    <div class="container">
+
+      <!-- Breadcrumb -->
+      <nav class="breadcrumb" aria-label="Você está em">
+        <a href="../index.html">Início</a> » 
+        <a href="categorias.html">Categorias</a> » 
+        <span aria-current="page">Vitaminas</span>
+      </nav>
+
+      <!-- Título e descrição -->
+      <header class="page-header" aria-labelledby="titulo-produtos">
+        <h2 id="titulo-produtos">Vitaminas</h2>
+        <p class="subtitle">
+          Encontre vitaminas e suplementos nutricionais para reforçar sua saúde, imunidade e energia diária.
+        </p>
+      </header>
+
+      <!-- Controles de busca e filtro -->
+      <section class="controls" aria-label="Controles de busca e filtro">
+        <div class="search-wrap">
+          <input type="search" placeholder="Buscar por nome ou marca..." aria-label="Buscar vitaminas">
+        </div>
+
+        <div class="filters-wrap" aria-label="Filtros por categoria">
+          <label class="small" aria-hidden="true">Tipo:</label>
+          <div class="chips" role="list">
+            <button class="chip active" type="button">Multivitamínico</button>
+            <button class="chip" type="button">Vitamina C</button>
+            <button class="chip" type="button">Vitamina D</button>
+            <button class="chip" type="button">Ômega</button>
+          </div>
+        </div>
+
+        <div class="sort-wrap" aria-label="Ordenação">
+          <label class="small" for="sort-select">Ordenar:</label>
+          <select id="sort-select" aria-label="Ordenar produtos">
+            <option>Mais relevantes</option>
+            <option>Menor preço</option>
+            <option>Melhor avaliação</option>
+          </select>
+        </div>
+      </section>
+
+      <!-- Lista de produtos -->
+      <section class="grid-produtos" aria-label="Lista de produtos">
+
+        <article class="produto-card" aria-labelledby="v1-title">
+          <div class="card-media">
+            <img src="../imagens/vitaminaC.png" alt="Vitamina C 1000mg">
+            <div class="badge">100 cápsulas</div>
+            <div class="compare-checkbox">
+              <input type="checkbox" aria-label="Comparar Vitamina C">
+            </div>
+          </div>
+          <div class="card-body">
+            <h3 id="v1-title" class="produto-title">Vitamina C 1000mg</h3>
+            <p class="produto-sub">Marca ImunePlus • Extra Força</p>
+            <ul class="composition" aria-label="Composição nutricional">
+              <li><strong>Vitamina C:</strong> 1000 mg / dose</li>
+              <li><strong>Outros ingredientes:</strong> ácido cítrico, celulose microcristalina</li>
+            </ul>
+            <div class="card-footer">
+              <div class="price">R$ 79,90</div>
+              <div class="actions">
+                <a class="btn ghost" href="comparar.html">Comparar</a>
+                <a class="btn primary" href="#">Ver</a>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="produto-card" aria-labelledby="v2-title">
+          <div class="card-media">
+            <img src="../imagens/vitaminaD.png" alt="Vitamina D 2000 UI">
+            <div class="badge">2000 UI</div>
+            <div class="compare-checkbox">
+              <input type="checkbox" aria-label="Comparar Vitamina D">
+            </div>
+          </div>
+          <div class="card-body">
+            <h3 id="v2-title" class="produto-title">Vitamina D 2000 UI</h3>
+            <p class="produto-sub">Marca SunHealth • Dose diária</p>
+            <ul class="composition" aria-label="Composição nutricional">
+              <li><strong>Vitamina D3:</strong> 2000 UI / caps</li>
+              <li><strong>Outros:</strong> óleo de girassol, gelatina</li>
+            </ul>
+            <div class="card-footer">
+              <div class="price">R$ 64,90</div>
+              <div class="actions">
+                <a class="btn ghost" href="comparar.html">Comparar</a>
+                <a class="btn primary" href="#">Ver</a>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="produto-card" aria-labelledby="v3-title">
+          <div class="card-media">
+            <img src="../imagens/multivitaminico.png" alt="Multivitamínico 120 cápsulas">
+            <div class="badge">120 cápsulas</div>
+            <div class="compare-checkbox">
+              <input type="checkbox" aria-label="Comparar Multivitamínico">
+            </div>
+          </div>
+          <div class="card-body">
+            <h3 id="v3-title" class="produto-title">Multivitamínico 120 Cáps</h3>
+            <p class="produto-sub">Marca BalanceLife • Uso diário</p>
+            <ul class="composition" aria-label="Composição nutricional">
+              <li><strong>Vitaminas:</strong> A, B, C, D, E / dose</li>
+              <li><strong>Minerais:</strong> Zinco, Magnésio, Cálcio / cáps</li>
+            </ul>
+            <div class="card-footer">
+              <div class="price">R$ 89,90</div>
+              <div class="actions">
+                <a class="btn ghost" href="comparar.html">Comparar</a>
+                <a class="btn primary" href="#">Ver</a>
+              </div>
+            </div>
+          </div>
+        </article>
+
+      </section>
+
+      <!-- Paginação -->
+      <nav class="pagination" aria-label="Paginação de produtos">
+        <button class="page-btn">« Anterior</button>
+        <button class="page-btn active">1</button>
+        <button class="page-btn">2</button>
+        <button class="page-btn">3</button>
+        <button class="page-btn">Próxima »</button>
+      </nav>
+
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-column">
+        <h3>HyperFit</h3>
+        <ul>
+          <li><a href="#">Sobre nós</a></li>
+          <li><a href="#">Contato</a></li>
+          <li><a href="#">Privacidade</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h3>Suporte</h3>
+        <ul>
+          <li><a href="#">Ajuda</a></li>
+          <li><a href="#">FAQ</a></li>
+          <li><a href="#">Termos</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h3>Siga-nos</h3>
+        <ul>
+          <li><a href="https://www.instagram.com/hyperfit.supplements/" target="_blank">Instagram</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

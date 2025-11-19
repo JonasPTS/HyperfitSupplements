@@ -14,6 +14,13 @@
         <img src="HyperLOGO.png" alt="Logo HyperFit" />
         <h1>HyperWay</h1>
       </div>
+
+      <div class="hamburger" onclick="this.classList.toggle('active'); document.querySelector('nav ul').classList.toggle('mobile-open')">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
       <nav>
         <ul>
           <li><a href="../index.html">Início</a></li>
@@ -26,45 +33,53 @@
     </div>
   </header>
 
-  <section class="banner-comparar">
-    <h2>Comparador de Suplementos</h2>
-    <p> <strong>Veja lado a lado os detalhes de cada produto e escolha o melhor para você.</strong></p>
-  </section>
+  <body>
 
+<section class="banner-comparar">
+  <h2>Comparador de Suplementos</h2>
+  <p>Compare os principais suplementos lado a lado e escolha o melhor para você!</p>
+</section>
 
-  <main class="comparador">
-    <div class="comparador-inputs">
-      <input type="text" placeholder="Suplemento 1">
-      <input type="text" placeholder="Suplemento 2">
-      <button>Comparar</button>
+<main class="comparador">
+  <div class="comparador-inputs">
+    <input type="text" placeholder="Suplemento 1">
+    <input type="text" placeholder="Suplemento 2">
+    <button>Comparar</button>
+  </div>
+
+  <div class="comparador-grid">
+    
+    <div class="card destaque">
+      <h3>Whey Protein Premium</h3>
+      <img src="/imagens/Whey protein Isolado.jpeg" alt="Whey Protein Premium">
+      <ul>
+        <li><span> Proteínas:</span> 25g</li>
+        <li><span> Carboidratos:</span> 3g</li>
+        <li><span> Gorduras:</span> 1.5g</li>
+        <li><span> Calorias:</span> 120 kcal</li>
+      </ul>
+      <div class="price">R$ 129,90</div>
+      <button class="btn-buy">Comprar</button>
     </div>
 
-    <div class="comparador-cards">
-      <div class="card">
-        <h3>Whey Protein</h3>
-        <img src="../imagens/PretreiSUPP.png" alt="Whey Protein">
-        <ul>
-          <li><strong>Proteínas:</strong> 24g</li>
-          <li><strong>Carboidratos:</strong> 3g</li>
-          <li><strong>Gorduras:</strong> 2g</li>
-          <li><strong>Calorias:</strong> 120</li>
-          <li><strong>Preço:</strong> R$ 120</li>
-        </ul>
-      </div>
-
-      <div class="card">
-        <h3>Creatina</h3>
-        <img src="../imagens/wheySUPP.png" alt="Creatina">
-        <ul>
-          <li><strong>Proteínas:</strong> 0g</li>
-          <li><strong>Carboidratos:</strong> 0g</li>
-          <li><strong>Gorduras:</strong> 0g</li>
-          <li><strong>Calorias:</strong> 0</li>
-          <li><strong>Preço:</strong> R$ 80</li>
-        </ul>
-      </div>
+    <div class="card">
+      <h3>Whey Protein Standard</h3>
+      <img src="/imagens/Topwhey 3w.jpeg" alt="Whey Protein Standard">
+      <ul>
+        <li><span> Proteínas:</span> 22g</li>
+        <li><span> Carboidratos:</span> 4g</li>
+        <li><span> Gorduras:</span> 2g</li>
+        <li><span> Calorias:</span> 130 kcal</li>
+      </ul>
+      <div class="price">R$ 99,90</div>
+      <button class="btn-buy">Comprar</button>
     </div>
-  </main>
+
+  </div>
+</main>
+
+</body>
+
 
   <footer id="footer">
     <div class="container">
@@ -87,9 +102,7 @@
       <div class="footer-column">
         <h3>Siga-nos</h3>
         <ul>
-          <li><a href="https://www.facebook.com/">Facebook</a></li>
-          <li><a href="https://www.instagram.com/">Instagram</a></li>
-          <li><a href="https://x.com/">Twitter</a></li>
+          <li><a href="https://www.instagram.com/hyperfit.supplements/" target="_blank">Instagram</a></li>
         </ul>
       </div>
     </div>
