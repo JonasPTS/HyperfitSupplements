@@ -17,7 +17,8 @@
         <h1>HyperWay</h1>
       </div>
 
-      <div class="hamburger" onclick="this.classList.toggle('active'); document.querySelector('nav ul').classList.toggle('mobile-open')">
+      <div class="hamburger"
+        onclick="this.classList.toggle('active'); document.querySelector('nav ul').classList.toggle('mobile-open')">
         <span></span>
         <span></span>
         <span></span>
@@ -46,16 +47,16 @@
   <section id="search">
     <div class="container">
       <input type="text" placeholder="Buscar suplemento ou categoria..." />
-      <button>Buscar</button>
+      <button onclick="location.href='../optionsheader/categorias.html'">Buscar</button>
     </div>
   </section>
 
   <section id="categories">
     <div class="container">
-      <button class="cat-btn">Proteínas</button>
-      <button class="cat-btn">Creatinas</button>
-      <button class="cat-btn">Pré-Treinos</button>
-      <button class="cat-btn">Vitaminas</button>
+      <button class="cat-btn" onclick="location.href='../optionsheader/CatProteinas.html'">Proteínas</button>
+      <button class="cat-btn" onclick="location.href='../optionsheader/CatSuplementos.html'">Creatinas</button>
+      <button class="cat-btn" onclick="location.href='../optionsheader/CatPerformance.html'">Performance</button>
+      <button class="cat-btn" onclick="location.href='../optionsheader/CatVitaminas.html'">Vitaminas</button>
     </div>
   </section>
 
@@ -156,7 +157,7 @@
       </div>
     </div>
   </footer>
-  
+
 </body>
 
 </html>
