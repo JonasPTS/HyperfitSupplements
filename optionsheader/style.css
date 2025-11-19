@@ -1157,6 +1157,7 @@ footer .container {
   box-shadow: 0 8px 22px rgba(0, 0, 0, 0.45);
   margin-bottom: 18px;
   overflow: visible;
+  z-index: 1;
 }
 
 .produtos-page .page-header h2 {
