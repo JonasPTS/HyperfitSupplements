@@ -1,4 +1,4 @@
-# Projeto: Site da Empresa Fictícia
+# Projeto: Site de Empresa Fictícia
 
 Este repositório contém o site de uma **empresa fictícia**, desenvolvido como parte de um **trabalho técnico da ETE Miguel Arraes de Alencar(Timbaúba,PE)**.  
 
