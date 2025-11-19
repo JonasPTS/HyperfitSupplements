@@ -1777,7 +1777,7 @@ footer .container {
 .av-footer {
   display: flex;
   flex-wrap: wrap;
-  gap: 10px;
+  gap: 20px;
 }
 
 .btn {
@@ -1847,6 +1847,7 @@ footer .container {
 .avaliacao-form h3 {
   color: #05b30e;
   margin-bottom: 20px;
+
 }
 
 .avaliacao-form .form-row {
@@ -1914,7 +1915,9 @@ footer .container {
     margin-top: 5px;
   }
 
-  .btn,
+  .btn{
+    margin-bottom: 10px;
+  }
   .btn-primary,
   .btn-ghost {
     width: 100%;
@@ -1922,7 +1925,7 @@ footer .container {
   }
 }
 
-
+/*Categorias Primaria CSS*/
 .categorias {
   background: linear-gradient(180deg, #161616 0%, #202020 60%, #121212 100%);
   padding: 100px 30px;
